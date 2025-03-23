@@ -6,10 +6,10 @@ terraform {
     }
     keepass = {
       source  = "iSchluff/keepass"
-      version = "1.0.0"
+      version = "1.0.1"
     }
   }
-  required_version = "~> 1.10.0"
+  required_version = "~> 1.11.0"
 }
 
 provider "proxmox" {
