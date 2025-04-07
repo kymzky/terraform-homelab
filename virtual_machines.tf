@@ -11,6 +11,7 @@ module "control" {
 
   vm_id         = 101
   name          = "control"
+  disk_size     = 720
   ipv4_address  = "192.168.1.1/24"
   node_name     = var.proxmox_node
   image_file_id = proxmox_virtual_environment_download_file.ubuntu_cloud_image.id

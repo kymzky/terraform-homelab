@@ -27,7 +27,7 @@ variable "memory" {
 
 variable "disk_size" {
   type    = number
-  default = 720
+  default = 256
 }
 
 variable "image_file_id" {
