@@ -9,7 +9,7 @@ resource "proxmox_virtual_environment_download_file" "ubuntu_cloud_image" {
 module "control" {
   source = "./modules/cloud_init_vm"
 
-  vm_id         = 101
+  vm_id         = 100
   name          = "control"
   disk_size     = 720
   ipv4_address  = "192.168.1.1/24"
@@ -22,7 +22,7 @@ module "control" {
 module "worker1" {
   source = "./modules/cloud_init_vm"
 
-  vm_id         = 102
+  vm_id         = 101
   name          = "worker1"
   ipv4_address  = "192.168.1.2/24"
   node_name     = var.proxmox_node
@@ -34,7 +34,7 @@ module "worker1" {
 module "worker2" {
   source = "./modules/cloud_init_vm"
 
-  vm_id         = 103
+  vm_id         = 102
   name          = "worker2"
   ipv4_address  = "192.168.1.3/24"
   node_name     = var.proxmox_node
